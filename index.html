@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body onload="init()">
+    <div class="nev">
+        <div class="logobox">
+            <img src="Logo.png" alt="Logo" class="logo" />
+        </div>
+        <div class="main_nev">
+            <p class=sort>Sort by: </p><select class="select" onchange="sortby(this.value)">
+                <option class="option" value="Title">Name</option>
+                <option class="option" value="Runtime">Time</option>
+            </select>
+        </div>
+    </div>
+    <div class="main">
+    </div>
+        <div class="popup">
+            <div class="modal-content">
+              <span></span>
+              <p>Do you sure you want to delete this movie?</p>
+              <div class="btn_yn">
+                <button onclick="del()">Yes</button>
+                <button onclick="done()">No</button>
+              </div>
+            </div>
+         </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
