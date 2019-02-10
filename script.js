@@ -26,7 +26,7 @@ function init() {
   let reqs = [];
   let count = 0;
   apiDetails.forEach(items => {
-    let requestURL = `http://www.omdbapi.com/?i=${items}&apikey=1f6ad072&`;
+    let requestURL = `https://www.omdbapi.com/?i=${items}&apikey=1f6ad072&`;
     reqs.push(fetch(requestURL));
   });
   let nextId = 0;
